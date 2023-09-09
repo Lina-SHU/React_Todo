@@ -36,7 +36,7 @@ function App() {
       return alert('請輸入新增待辦');
     }
     const obj = {
-      id: new Date(),
+      id: `${new Date()}${todoList.length + 1}`,
       content: newTodo,
       status: false
     }
